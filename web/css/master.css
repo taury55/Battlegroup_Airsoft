@@ -1,0 +1,79 @@
+body {
+	color: black;
+	background-color: white;
+	display: grid;
+	font-size: 16px;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-size: 28px;
+	font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+	font-size: 22px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0.7em 0em 0.7em 0.5em;
+}
+
+h4 {
+	font-size: 19px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0.5em 0em 0.5em 3em;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	text-indent: 2em;
+	margin: 0em 0em 0.5em 1em;
+}
+
+.top-bar {
+	font-size: 28px;
+	background-color: #26282f;
+	display: grid;
+	grid-template-columns: 10em repeat(4, 5em);
+	font-family: 'Oswald', sans-serif;
+}
+
+.top-bar-btn {
+	height: 100%;
+	width: 100%;
+	background-color: #26282f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+}
+
+.top-bar-btn:hover {
+	transform: translateY(0.3em);
+	box-shadow: 0.02em 0.02em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+	z-index: 20;
+	transition: 0.3s;
+}
+
+.top-bar-a {
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	height: 4em;
+}
+
+.content {
+	margin: 1.5em;
+}
+
+.content-par {
+	width: 80%;
+}
