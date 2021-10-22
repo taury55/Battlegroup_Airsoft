@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&family=Special+Elite&display=swap');
+
 body {
 	color: black;
 	background-color: white;
@@ -9,24 +11,24 @@ body {
 
 h2 {
 	font-size: 28px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', cursive;
 }
 
 h3 {
 	font-size: 22px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', cursive;
 	margin: 0.7em 0em 0.7em 0.5em;
 }
 
 h4 {
 	font-size: 19px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Special Elite', cursive;
 	margin: 0.5em 0em 0.5em 3em;
 }
 
 p {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Special Elite', cursive;
 	text-indent: 2em;
 	margin: 0em 0em 0.5em 1em;
 }
