@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@100&family=Special+Elite&display=swap');
 
 @font-face {
 	font-family: 'typewriter';
@@ -58,9 +58,25 @@ p {
 
 .top-bar-btn:hover {
 	transform: translateY(0.3em);
+	background-color: white;
 	box-shadow: 0.02em 0.02em 0.2em 0.2em rgba(0, 0, 0, 0.5);
 	z-index: 20;
 	transition: 0.3s;
+}
+
+.top-bar-btn span {
+	border-radius: 2px;
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, black 50%, rgba(0, 0, 0, 0) 0);
+	transform: skewx(-8deg);
+	transition: background-position 0.5s;
+	background-position: right;
+}
+
+.top-bar-btn:hover span {
+	transition: background-position 0.5s ease-out;
+	color: black;
+	background-position: left;
 }
 
 .top-bar-a {
@@ -120,5 +136,14 @@ p {
   }
   100% {
 	background-position: left;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+	background-position: left;
+  }
+  100% {
+	background-position: right;
   }
 }
