@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 :root {
-	--card-width: 200px;
-	--card-height: 300px;
+	--card-width: 300px;
+	--card-height: 80%;
 
 	--card-transition-duration: 800ms;
 	--card-transition-easing: ease;
@@ -13,6 +13,10 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	overflow: hidden;
 }
 
 .carusel-container {
@@ -126,6 +130,12 @@ button {
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.cardList {
+		width: calc(2 * var(--card-width));
+	}
+}
+
 .card {
 	--card-translateY-offset: 100vh;
 
@@ -213,6 +223,13 @@ button {
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.infoList {
+		width: calc(2 * var(--card-width));
+		right: calc(0.7 * var(--card-width));
+	}
+}
+
 .info {
 	margin-bottom: calc(var(--card-height) / 8);
 	margin-left: calc(var(--card-width) / 1.5);
@@ -295,6 +312,7 @@ button {
 	z-index: 200;
 	.loader--text {
 		color: #fff;
+		font-size: 3vw;
 		font-family: "Montserrat";
 		font-weight: 500;
 		margin-bottom: 1.4rem;
@@ -315,6 +333,11 @@ button {
 			transform-origin: left;
 		}
 	}
+}
+
+:root {
+	--card-width: 40vw;
+	--card-height: 60vh;
 }
 
 @media only screen and (min-width: 800px) {
